@@ -1,0 +1,53 @@
+:root{
+  --cor-primaria: #24395A;
+  --cor-primaria-pressionada: #16253D;
+  --cor-luz: #E8B062;
+  --cor-luz-suave: #F5EAD6;
+  --cor-luz-texto: #8A5A12;
+  --cor-fundo: #F7F1E6;
+  --cor-superficie: #FFFDF8;
+  --cor-superficie-2: #EFE4D0;
+  --cor-borda: #E3D9C8;
+  --cor-borda-campo: #D8CCB7;
+  --cor-texto: #2A2723;
+  --cor-texto-2: #6E675D;
+  --cor-texto-3: #4F4941;
+  --cor-sucesso: #6E9A7B;
+  --cor-sucesso-texto: #4A7458;
+  --cor-erro: #B84E3B;
+  --cor-sobre-primaria: #FFFFFF;
+  --fonte-titulo: 'Newsreader', Georgia, serif;
+  --fonte-interface: 'Source Sans 3', system-ui, sans-serif;
+  --espaco-xs: 4px;
+  --espaco-sm: 8px;
+  --espaco-md: 12px;
+  --espaco-lg: 16px;
+  --espaco-xl: 24px;
+  --espaco-2xl: 32px;
+  --espaco-3xl: 48px;
+  --raio-chip: 22px;
+  --raio-campo: 14px;
+  --raio-botao: 14px;
+  --raio-cartao: 16px;
+  --raio-toast: 14px;
+  --raio-fab: 18px;
+}
+@media (prefers-color-scheme: dark){:root{
+  --cor-primaria: #8FA6C8;
+  --cor-primaria-pressionada: #B4C4DB;
+  --cor-luz: #E8B062;
+  --cor-luz-suave: #3A3122;
+  --cor-luz-texto: #E8B062;
+  --cor-fundo: #11161F;
+  --cor-superficie: #1B2230;
+  --cor-superficie-2: #232B3B;
+  --cor-borda: #2A3345;
+  --cor-borda-campo: #39445A;
+  --cor-texto: #F3ECDF;
+  --cor-texto-2: #A7AEBB;
+  --cor-texto-3: #C9CFD8;
+  --cor-sucesso: #8DBB9A;
+  --cor-sucesso-texto: #8DBB9A;
+  --cor-erro: #E07A66;
+  --cor-sobre-primaria: #11161F;
+}}
