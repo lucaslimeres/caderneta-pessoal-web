@@ -1,25 +1,70 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/privacy", "destination": "/privacidade", "permanent": true },
-    { "source": "/privacy-policy", "destination": "/privacidade", "permanent": true },
-    { "source": "/delete-account", "destination": "/excluir-conta", "permanent": true },
-    { "source": "/support", "destination": "/suporte", "permanent": true }
+    {
+      "source": "/privacy",
+      "destination": "/privacidade",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacidade",
+      "permanent": true
+    },
+    {
+      "source": "/delete-account",
+      "destination": "/excluir-conta",
+      "permanent": true
+    },
+    {
+      "source": "/support",
+      "destination": "/suporte",
+      "permanent": true
+    }
   ],
   "headers": [
     {
+      "source": "/_app/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
         {
           "key": "Content-Security-Policy",
           "value": "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://api.cadernetapessoal.com.br; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
