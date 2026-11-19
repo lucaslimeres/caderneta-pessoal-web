@@ -178,12 +178,7 @@ export function PrivacyPage() {
             <tbody>
               <tr>
                 <td>Railway</td>
-                <td>Hospedagem da API</td>
-                <td>Dados da conta e notas (em trânsito)</td>
-              </tr>
-              <tr>
-                <td>Neon</td>
-                <td>Banco de dados</td>
+                <td>Hospedagem da API e do banco de dados</td>
                 <td>Dados da conta e notas</td>
               </tr>
               <tr>
